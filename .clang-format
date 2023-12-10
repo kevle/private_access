@@ -1,0 +1,8 @@
+﻿---
+BasedOnStyle: Microsoft
+IndentWidth: '4'
+NamespaceIndentation: None
+PointerAlignment: Left
+TabWidth: '4'
+UseTab: Never
+...
