@@ -52,7 +52,7 @@ template <typename class_t, typename member_t> struct member_ptr_type_extractor<
     using class_type = class_t;
 };
 
-template <typename T> using get_member_type_from_ptr_t = member_ptr_type_extractor<T>::member_type;
+template <typename T> using get_member_type_from_ptr_t = typename member_ptr_type_extractor<T>::member_type;
 
 template <typename in_t, typename out_t>
 using copy_const_t = std::conditional_t<std::is_const_v<std::remove_reference_t<in_t>>, std::add_const_t<out_t>, out_t>;
